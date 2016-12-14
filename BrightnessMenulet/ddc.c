@@ -59,7 +59,7 @@ int ddc_write(CGDirectDisplayID display_id, struct DDCWriteCommand* p_write) {
     
     bzero(&request, sizeof(request));
     
-    request.commFlags           = 0;
+    request.commFlags           = kIOI2CUseSubAddressCommFlag;
     request.sendAddress         = 0x6e;
     request.sendTransactionType = kIOI2CSimpleTransactionType;
 	request.sendBuffer          = (vm_address_t) &data[0];
@@ -99,7 +99,7 @@ int ddc_read(CGDirectDisplayID display_id, struct DDCReadCommand* p_read) {
 	for (int i=0; i<60; i++) {
 		bzero( &request, sizeof(request));
 		
-		request.commFlags           = 0;
+		request.commFlags           = kIOI2CUseSubAddressCommFlag;
 		request.sendAddress         = 0x6E;
 		request.sendTransactionType = kIOI2CDDCciReplyTransactionType;
 		request.sendBuffer          = (vm_address_t) &data[0];
@@ -170,7 +170,7 @@ void EDIDRead(CGDirectDisplayID display_id, struct EDID* edid) {
     
     bzero( &request, sizeof(request) );
     
-    request.commFlags	    	= 0;
+    request.commFlags	    	= kIOI2CUseSubAddressCommFlag;
     request.sendAddress			= 0xA0;
     request.sendTransactionType	= kIOI2CSimpleTransactionType;
     request.sendBuffer			= (vm_address_t)&data[0];
