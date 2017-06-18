@@ -42,8 +42,8 @@
 - (void)setContrast:(NSInteger)contrast byOutlet:(NSView*)outlet;
 
 - (void)setAutoAttribute:(NSString*)attribute;
-- (void)setAutoMin:(NSInteger*)attribute;
-- (void)setAutoMax:(NSInteger*)attribute;
+- (void)setAutoMin:(NSInteger)attribute;
+- (void)setAutoMax:(NSInteger)attribute;
 
 
 @end
