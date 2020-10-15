@@ -3,7 +3,7 @@
 Allows you to control monitor brigthness via menu in status bar.
 
 
-[![GitHub release](https://img.shields.io/github/release/florianbeck/brightnessmenulet.svg?style=flat-square)](http://github.com/florianbeck/brightnessmenulet/releases/latest) [![Github All Releases](https://img.shields.io/github/downloads/florianbeck/brightnessmenulet/total.svg?style=flat-square)](http://github.com/florianbeck/brightnessmenulet/releases/latest)
+[![Not Maintained](https://img.shields.io/badge/Maintenance%20Level-Not%20Maintained-yellow.svg)](https://gist.github.com/cheerfulstoic/d107229326a01ff0f333a1d3476e068d) [![GitHub release](https://img.shields.io/github/release/florianbeck/brightnessmenulet.svg?style=flat-square)](http://github.com/florianbeck/brightnessmenulet/releases/latest) [![Github All Releases](https://img.shields.io/github/downloads/florianbeck/brightnessmenulet/total.svg?style=flat-square)](http://github.com/florianbeck/brightnessmenulet/releases/latest)
 
 **Note:** This tool works on OSX 10.8+. In 10.8+, I2C tools are not able to detect monitor buses for communication. If you have tested your monitor(s) with this tool, please let me know wether it worked or not so I can add monitor models here. Preference's Debug button logs to the console VCP codes and their values on the selected monitor.
 
