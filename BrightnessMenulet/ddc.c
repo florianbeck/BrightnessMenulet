@@ -9,7 +9,7 @@
 #include <IOKit/IOKitLib.h>
 #include <IOKit/graphics/IOGraphicsLib.h>
 #include <ApplicationServices/ApplicationServices.h>
-#include "DDC.h"
+#include "ddc.h"
 
 #define kMaxRequests 10
 

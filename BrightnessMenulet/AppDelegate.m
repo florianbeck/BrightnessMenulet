@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NSSlider+Scrollwheel.h"
 
 @interface AppDelegate ()
 
